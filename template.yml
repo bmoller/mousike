@@ -1,0 +1,49 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+
+Parameters:
+  DynamoDBReadUnits:
+    Default: 5
+    Description: Number of DynamoDB read units to provision for each table
+    MaxValue: 10000
+    MinValue: 1
+    Type: Number
+  DynamoDBWriteUnits:
+    Default: 5
+    Description: Number of DynamoDB write units to provision for each table
+    MaxValue: 10000
+    MinValue: 1
+    Type: Number
+
+Globals:
+  Function:
+    CodeUri: bin/
+    Environment:
+      Variables:
+        DYNAMODB_USERS_TABLE: !Ref UsersTable
+    Runtime: python3.6
+    Timeout: 20
+
+Resources:
+
+  UsersTable:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      PrimaryKey:
+        Name: username
+        Type: String
+      ProvisionedThroughput:
+        ReadCapacityUnits: !Ref DynamoDBReadUnits
+        WriteCapacityUnits: !Ref DynamoDBWriteUnits
+      TableName: !Sub MousikeUsers-${AWS::Region}
+
+  PingFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Events:
+        ApiCall:
+          Type: Api
+          Properties:
+            Path: /ping
+            Method: get
+      Handler: ping.lambda_handler
