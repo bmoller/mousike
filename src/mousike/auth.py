@@ -1,3 +1,10 @@
+"""Functions related to authentication for the Subsonic API.
+
+Up to API version 1.12.0 authentication is performed by sending the password as
+clear text or hex-encoded; the password string must begin with `enc:` when it
+is sent in hex-encoded format.
+"""
+
 import base64
 import hashlib
 import os
