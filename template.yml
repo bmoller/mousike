@@ -14,6 +14,10 @@ Parameters:
     MaxValue: 10000
     MinValue: 1
     Type: Number
+  LicenseEmail:
+    AllowedPattern: '^[a-zA-z\d]+(\.[a-zA-Z\d]+)*@[a-zA-Z\d](\.[a-zA-Z\d]+)+$'
+    Description: E-mail address to return with the server license status
+    Type: String
 
 Globals:
   Function:
@@ -21,6 +25,7 @@ Globals:
     Environment:
       Variables:
         DYNAMODB_USERS_TABLE: !Ref UsersTable
+        LICENSE_EMAIL: !Ref LicenseEmail
     Runtime: python3.6
     Timeout: 20
 
@@ -44,6 +49,17 @@ Resources:
         ApiCall:
           Type: Api
           Properties:
-            Path: /ping
+            Path: /rest/ping
             Method: get
       Handler: ping.lambda_handler
+
+  GetLicenseFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Events:
+        ApiCall:
+          Type: Api
+          Properties:
+            Path: /rest/getLicense
+            Method: get
+      Handler: get_license.lambda_handler
