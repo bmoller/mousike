@@ -15,13 +15,13 @@ Parameters:
     MinValue: 1
     Type: Number
   LicenseEmail:
-    AllowedPattern: '^[a-zA-z\d]+(\.[a-zA-Z\d]+)*@[a-zA-Z\d](\.[a-zA-Z\d]+)+$'
+    AllowedPattern: '^[a-zA-z\d]+(\.[a-zA-Z\d]+)*@[a-zA-Z\d]+(\.[a-zA-Z\d]+)+$'
     Description: E-mail address to return with the server license status
     Type: String
 
 Globals:
   Function:
-    CodeUri: bin/
+    CodeUri: ./src
     Environment:
       Variables:
         DYNAMODB_USERS_TABLE: !Ref UsersTable
