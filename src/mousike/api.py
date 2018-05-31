@@ -69,9 +69,7 @@ def build_response(data: xml.etree.ElementTree.Element=None, status: str='ok'):
     response_tree = xml.etree.ElementTree.ElementTree(subsonic_response)
     with io.StringIO as temp_buffer:
         response_tree.write(
-            temp_buffer, encoding='UTF-8', xml_declaration=True,
-            short_empty_elements=False
-        )
+            temp_buffer, encoding='UTF-8', xml_declaration=True)
         xml_string = temp_buffer.getvalue()
 
     return xml_string
