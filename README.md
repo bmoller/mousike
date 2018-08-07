@@ -41,9 +41,20 @@ API matrix:
 
 | Method | 1.0.0 | 1.1.0 | 1.1.1 | 1.2.0 | 1.3.0 | 1.4.0 | 1.5.0 | 1.6.0 | 1.7.0 | 1.8.0 | 1.9.0 | 1.10.2 | 1.11.0 | 1.12.0 | 1.13.0 | 1.14.0 | 1.15.0 | 1.16.0 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [getAlbum](http://www.subsonic.org/pages/api.jsp#getAlbum) | | | | | | | | | | • | • | • | • | • | • | • | • | • |
+| [getAlbumInfo](http://www.subsonic.org/pages/api.jsp#getAlbumInfo) | | | | | | | | | | | | | | | | • | • | • |
+| [getAlbumInfo2](http://www.subsonic.org/pages/api.jsp#getAlbumInfo2) | | | | | | | | | | | | | | | | • | • | • |
+| [getArtist](http://www.subsonic.org/pages/api.jsp#getArtist) | | | | | | | | | | • | • | • | • | • | • | • | • | • |
+| [getArtistInfo](http://www.subsonic.org/pages/api.jsp#getArtistInfo) | | | | | | | | | | | | | • | • | • | • | • | • |
+| [getArtistInfo2](http://www.subsonic.org/pages/api.jsp#getArtistInfo2) | | | | | | | | | | | | | • | • | • | • | • | • |
+| [getArtists](http://www.subsonic.org/pages/api.jsp#getArtists) | | | | | | | | | | • | • | • | • | • | • | • | • | • |
 | [getGenres](http://www.subsonic.org/pages/api.jsp#getGenres) | | | | | | | | | | | • | • | • | • | • | • | • | • |
 | [getIndexes](http://www.subsonic.org/pages/api.jsp#getIndexes) | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • |
 | [getLicense](http://www.subsonic.org/pages/api.jsp#getLicense) | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • |
 | [getMusicDirectory](http://www.subsonic.org/pages/api.jsp#getMusicDirectory) | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • |
 | [getMusicFolders](http://www.subsonic.org/pages/api.jsp#getMusicFolders) | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • |
+| [getSimilarSongs](http://www.subsonic.org/pages/api.jsp#getSimilarSongs) | | | | | | | | | | | | | • | • | • | • | • | • |
+| [getSong](http://www.subsonic.org/pages/api.jsp#getSong) | | | | | | | | | | • | • | • | • | • | • | • | • | • |
+| [getVideoInfo](http://www.subsonic.org/pages/api.jsp#getVideoInfo) | | | | | | | | | | | | | | | | • | • | • |
+| [getVideos](http://www.subsonic.org/pages/api.jsp#getVideos) | | | | | | | | | | • | • | • | • | • | • | • | • | • |
 | [ping](http://www.subsonic.org/pages/api.jsp#ping) | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • |
