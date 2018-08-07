@@ -41,20 +41,9 @@ API matrix:
 
 | Method | 1.0.0 | 1.1.0 | 1.1.1 | 1.2.0 | 1.3.0 | 1.4.0 | 1.5.0 | 1.6.0 | 1.7.0 | 1.8.0 | 1.9.0 | 1.10.2 | 1.11.0 | 1.12.0 | 1.13.0 | 1.14.0 | 1.15.0 | 1.16.0 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [ping](http://www.subsonic.org/pages/api.jsp#ping) | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • |
+| [getGenres](http://www.subsonic.org/pages/api.jsp#getGenres) | | | | | | | | | | | • | • | • | • | • | • | • | • |
+| [getIndexes](http://www.subsonic.org/pages/api.jsp#getIndexes) | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • |
 | [getLicense](http://www.subsonic.org/pages/api.jsp#getLicense) | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • |
-
-Browsing    getMusicFolders getIndexes getMusicDirectory getGenres getArtists getArtist getAlbum getSong getVideos getVideoInfo getArtistInfo getArtistInfo2 getAlbumInfo getAlbumInfo2 getSimilarSongs getSimilarSongs2 getTopSongs
-Album/song lists    getAlbumList getAlbumList2 getRandomSongs getSongsByGenre getNowPlaying getStarred getStarred2
-Searching   search search2 search3
-Playlists   getPlaylists getPlaylist createPlaylist updatePlaylist deletePlaylist
-Media retrieval stream download hls getCaptions getCoverArt getLyrics getAvatar
-Media annotation    star unstar setRating scrobble
-Sharing getShares createShare updateShare deleteShare
-Podcast getPodcasts getNewestPodcasts refreshPodcasts createPodcastChannel deletePodcastChannel deletePodcastEpisode downloadPodcastEpisode
-Jukebox jukeboxControl
-Internet radio  getInternetRadioStations createInternetRadioStation updateInternetRadioStation deleteInternetRadioStation
-Chat    getChatMessages addChatMessage
-User management getUser getUsers createUser updateUser deleteUser changePassword
-Bookmarks   getBookmarks createBookmark deleteBookmark getPlayQueue savePlayQueue
-Media library scanning  getScanStatus startScan
+| [getMusicDirectory](http://www.subsonic.org/pages/api.jsp#getMusicDirectory) | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • |
+| [getMusicFolders](http://www.subsonic.org/pages/api.jsp#getMusicFolders) | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • |
+| [ping](http://www.subsonic.org/pages/api.jsp#ping) | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • | • |
